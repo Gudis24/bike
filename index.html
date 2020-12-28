@@ -1,0 +1,711 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Disable search engine indexing -->
+    <meta name="robots" content="noindex">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <!-- Embeded Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <!-- Critical CSS (I rendering) -->
+    <link rel="stylesheet" href="/css/critical.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hello-week@2.10.3/dist/css/hello.week.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hello-week@2.10.3/dist/css/hello.week.theme.min.css">
+
+    <noscript>
+      <style>
+        /**
+        * Reinstate scrolling for non-JS clients
+        */
+        .simplebar-content-wrapper {
+          overflow: auto;
+        }
+      </style>
+    </noscript>
+    <title>Projekt dla bikesearch.pl</title>
+  </head>
+  <body data-spy="scroll" data-target=".fixed-nav"  data-offset="20">
+    <header id="header">
+      <div class="container-fluid top-bar d-none d-lg-block">
+        <div class="d-flex flex-row justify-content-between">
+          <div class="col-4">
+            <a href="/" class="brand"><img class="lozad" data-src="/images/logo-white.png" alt=""></a>
+          </div>
+          <div class="col-8 d-flex justify-content-end">
+            <a class="btn cta opacity-60 no-border-link" href="#">Przeglądaj profile i ogłoszenia</a><a href="#" class="btn cta border-o">Dodaj profil za darmo</a>
+          </div>
+        </div>
+      </div>
+      <div class="container localization p-2 p-lg-3 pb-lg-0 pr-lg-0">
+        <div class="flex-row d-flex justify-content-between align-items-center">
+          <div class="col-12 col-lg-6 icon-gps the-city d-flex">Ostrów Wielkopolski</div>
+          <div class="col-6 justify-content-end d-none d-lg-flex"><a class="btn" href="#">Udostępnij</a><a href="#" class="btn">Polub <span class="badge rounded bike-badge">1,825</span></a></div>
+        </div>
+      </div>
+      <div class="container bike-name p-2 p-lg-2">
+        <div class="flex-row d-flex wrapper">
+          <div class="col">
+            <div class="highlighted">
+              <div class="bike-type d-block">
+                <h1 class="d-inline-block heading">Harley Davidson 2019</h1>
+              </div>
+              <div class="bike-model d-block">
+                <h2 class="d-inline-block heading">IRON 883</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid container-lg bike-bg-container bg-cover lozad" data-background-image-set="url('/images/bike.jpg') 1x, url('/images/bike-responsive.jpg') 2x" >
+      </div>
+      <div class="container bike-blocks p-1 p-lg-3">
+        <div class="flex-row d-flex flex-wrap informations">
+          <div class="col-lg-3 col-6 p-1 py-lg-0">
+            <div class="bike-card d-flex rounded-sm justify-flex-start px-2 px-sm-4">
+              <img class="icon lozad" data-src="/images/svg/calendar.svg">
+              <div class="bike-info">
+                <div class="number bolded">4</div>
+                <div class="info">Lata razem</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6 p-1 py-lg-0">
+            <div class="bike-card d-flex rounded-sm justify-flex-start px-2 px-sm-4">
+              <img class="icon lozad" data-src="/images/svg/gauge.svg">
+              <div class="bike-info">
+                <div class="number bolded">158,547</div>
+                <div class="info">Przebieg (km)</div>
+              </div>
+            </div>
+          </div><div class="col-lg-3 col-6 p-1 py-lg-0">
+            <div class="bike-card d-flex rounded-sm justify-flex-start px-2 px-sm-4">
+              <img class="icon lozad" data-src="/images/svg/engine.svg">
+              <div class="bike-info">
+                <div class="number bolded">2,300</div>
+                <div class="info">Pojemność (cm<sup>3</sup>)</div>
+              </div>
+            </div>
+          </div><div class="col-lg-3 col-6 p-1 py-lg-0">
+            <div class="bike-card d-flex rounded-sm justify-flex-start px-2 px-sm-4">
+              <img class="icon lozad" data-src="/images/svg/event.svg">
+              <div class="bike-info">
+                <div class="number bolded">2019</div>
+                <div class="info">Rok produkcji</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid text-center quote-wrapper p-2 p-lg-3">
+        <div class="quote">
+          <img data-src="/images/svg/open-quote.svg" class="lozad icon-open-quote">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+          <img data-src="/images/svg/close-quote.svg" class="lozad icon-close-quote">
+        </div>
+      </div>
+      <!-- navi -->
+      <nav id="fixed-nav" class="fixed-nav navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a href="#" class="brand navbar-brand"><img class="d-none d-lg-block lozad" data-src="/images/logo.png" alt=""><img class="mobile lozad" data-src="/images/logo-white.png" alt=""></a>
+          <div class="navbar-toggler hamburger hamburger--emphatic" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="hamburger-box">
+              <div class="hamburger-inner"></div>
+            </div>
+          </div>
+          <div class="collapse navbar-collapse pb-4 pb-lg-0" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0 justify-content-center">
+              <li class="nav-item text-center"><a class="nav-link" href="#galeria"><i class="icon-picture"></i><div class="menu-name">Galeria 1,680</div></a></li>
+              <li class="nav-item text-center"><a class="nav-link" href="#filmy"><i class="icon-cinema"></i><div class="menu-name">Filmy 14</div></a></li>
+              <li class="nav-item text-center"><a class="nav-link" href="#activity"><i class="icon-motorcycle"></i><div class="menu-name">Aktywność 117</div></a></li>
+              <li class="nav-item text-center"><a class="nav-link" href=""><i class="icon-helmet"></i><div class="menu-name">Społczeczność 219</div></a></li>
+              <li class="nav-item text-center"><a class="nav-link" href=""><i class="icon-comment"></i><div class="menu-name">Komentarze 63</div></a></li>
+            </ul>
+            <div class=" d-block text-center d-lg-flex justify-content-center justify-content-lg-end">
+              <a class="btn cta opacity-60 no-border-link" href="#">Przeglądaj profile i ogłoszenia</a><a href="#" class="btn cta border-o">Dodaj profil za darmo</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="page-content">
+      <section class="navigation-section">
+      <div class="container">
+          <nav class="navbar navbar-expand-lg justify-content-center">
+            <ul class="navbar-nav justify-content-start justify-content-lg-between flex-row flex-wrap">
+              <li class="nav-item text-center col-6 col-sm-4 col-lg"><a class="nav-link" href="#galeria"><i class="icon-picture"></i><div class="menu-name">Galeria 1,680</div></a></li>
+              <li class="nav-item text-center col-6 col-sm-4 col-lg"><a class="nav-link" href="#filmy"><i class="icon-cinema"></i><div class="menu-name">Filmy 14</div></a></li>
+              <li class="nav-item text-center col-6 col-sm-4 col-lg"><a class="nav-link" href="#activity"><i class="icon-motorcycle"></i><div class="menu-name">Aktywność 117</div></a></li>
+              <li class="nav-item text-center col-6 col-sm-4 col-lg"><a class="nav-link" href=""><i class="icon-helmet"></i><div class="menu-name">Społczeczność 219</div></a></li>
+              <li class="nav-item text-center col-6 col-sm-4 col-lg"><a class="nav-link" href=""><i class="icon-comment"></i><div class="menu-name">Komentarze 63</div></a></li>
+            </ul>
+          </nav>
+      </div>
+      </section>
+      <section id="galeria" class="the-section">
+        <div class="container head-wrapper px-3">
+          <div class="flex-row d-flex flex-wrap align-items-center">
+            <div class="col-12 col-lg-5 position-relative">
+              <img class="lozad" data-src="/images/galeria.png" alt="">
+              <h2 class="head"> Galeria <span>1,680</span></h2>
+            </div>
+            <div class="col-12 col-lg-7">
+              <ul id="gallery-pills" class="nav nav-pills justify-content-center justify-content-md-between">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page">Wszystkie</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page">Wypad na grzyby</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Pozostałe</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item">Action</a></li>
+                    <li><a class="dropdown-item">Another action</a></li>
+                    <li><a class="dropdown-item">Something else here</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="fluid-container">
+            <div id="gallery-slider" class="slider-wrapper">
+              <div class="gallery-slide">
+                <div class="image1"><img data-lazy="/images/gallery/1.jpg" alt=""></div>
+                <div class="image2"><img data-lazy="/images/gallery/2.jpg" alt=""></div>
+                <div class="image3"><img data-lazy="/images/gallery/3.jpg" alt=""></div>
+              </div>
+              <div class="gallery-slide">
+                <div class="image1"><img data-lazy="/images/gallery/4.jpg" alt=""></div>
+                <div class="image2"><img data-lazy="/images/gallery/5.jpg" alt=""></div>
+                <div class="image3"><img data-lazy="/images/gallery/6.jpg" alt=""></div>
+              </div>
+              <div class="gallery-slide">
+                <div class="image1"><img data-lazy="/images/gallery/1.jpg" alt=""></div>
+                <div class="image2"><img data-lazy="/images/gallery/2.jpg" alt=""></div>
+                <div class="image3"><img data-lazy="/images/gallery/3.jpg" alt=""></div>
+              </div>
+              <div class="gallery-slide">
+                <div class="image1"><img data-lazy="/images/gallery/4.jpg" alt=""></div>
+                <div class="image2"><img data-lazy="/images/gallery/5.jpg" alt=""></div>
+                <div class="image3"><img data-lazy="/images/gallery/6.jpg" alt=""></div>
+              </div>
+              <div class="gallery-slide">
+                <div class="image1"><img data-lazy="/images/gallery/1.jpg" alt=""></div>
+                <div class="image2"><img data-lazy="/images/gallery/2.jpg" alt=""></div>
+                <div class="image3"><img data-lazy="/images/gallery/3.jpg" alt=""></div>
+              </div>
+              <div class="gallery-slide">
+                <div class="image1"><img data-lazy="/images/gallery/4.jpg" alt=""></div>
+                <div class="image2"><img data-lazy="/images/gallery/5.jpg" alt=""></div>
+                <div class="image3"><img data-lazy="/images/gallery/6.jpg" alt=""></div>
+              </div>
+              <div class="gallery-slide">
+                <div class="image1"><img data-lazy="/images/gallery/1.jpg" alt=""></div>
+                <div class="image2"><img data-lazy="/images/gallery/2.jpg" alt=""></div>
+                <div class="image3"><img data-lazy="/images/gallery/3.jpg" alt=""></div>
+              </div>
+              <div class="gallery-slide">
+                <div class="image1"><img data-lazy="/images/gallery/4.jpg" alt=""></div>
+                <div class="image2"><img data-lazy="/images/gallery/5.jpg" alt=""></div>
+                <div class="image3"><img data-lazy="/images/gallery/6.jpg" alt=""></div>
+              </div>
+            </div>
+            <!-- Add Arrows -->
+            <div class="gallery-arrows d-flex justify-content-between"></div>
+        </div>
+      </section>
+      <section id="filmy" class="the-section">
+        <div class="container head-wrapper px-3">
+          <img class="lozad" data-src="/images/icons_videos.png" alt="">
+          <h2 class="head">Filmy <span>14</span></h2>
+        </div>
+        <div class="container-fluid container-lg video-container px-0">
+            <div class="flex-row d-flex flex-wrap pr-0 pr-lg-3">
+              <div class="col-12 col-lg-8 p-0 p-lg-3 pt-0 video-item">
+              <div class="big-video">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item lozad" data-src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" title="YouTube video"></iframe>
+                  </div>
+                  <div class="video-published p-4 p-lg-0 pt-4">13 Września 2018</div>
+                  <div class="video-title p-4 p-lg-0 pt-3">
+                    Motoślad odc 142- Harley On Tour, przerobiony Royal Enfield i przygotowanie motocykla na wyprawę
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4 p-0 p-lg-3 py-0 video-sidebar">
+              <div id="simplebar" data-simplebar class="simplebar">
+                <div class="small-video">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <div class="embed-active d-flex justify-content-center align-items-center">Aktualnie odtwarzany</div>
+                    <iframe class="embed-responsive-item lozad" data-src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" title="YouTube video"></iframe>
+                  </div>
+                  <div class="video-published pt-3">13 Września 2018</div>
+                  <div class="video-title pt-2">
+                    Motoślad odc 142- Harley On Tour, przerobiony..
+                  </div>
+                </div>
+                <div class="small-video">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item lozad" data-src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" title="YouTube video"></iframe>
+                  </div>
+                  <div class="video-published pt-3">13 Września 2018</div>
+                  <div class="video-title pt-2">
+                    Motoślad odc 142- Harley On Tour, przerobiony..
+                  </div>
+                </div>
+                <div class="small-video">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item lozad" data-src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" title="YouTube video"></iframe>
+                  </div>
+                  <div class="video-published pt-3">13 Września 2018</div>
+                  <div class="video-title pt-2">
+                    Motoślad odc 142- Harley On Tour, przerobiony..
+                  </div>
+                </div>
+                <div class="small-video">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item lozad" data-src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" title="YouTube video"></iframe>
+                  </div>
+                  <div class="video-published pt-3">13 Września 2018</div>
+                  <div class="video-title pt-2">
+                    Motoślad odc 142- Harley On Tour, przerobiony..
+                  </div>
+                </div>
+                <div class="small-video">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item lozad" data-src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" title="YouTube video"></iframe>
+                  </div>
+                  <div class="video-published pt-3">13 Września 2018</div>
+                  <div class="video-title pt-2">
+                    Motoślad odc 142- Harley On Tour, przerobiony..
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@2.4.3/dist/simplebar.css"/>
+        <script src="https://cdn.jsdelivr.net/npm/simplebar@2.4.3/dist/simplebar.min.js"></script>
+      </section>
+      <section id="activity" class="the-section">
+        <div class="container head-wrapper px-3">
+          <img class="lozad" data-src="/images/icons_motorcycle.png" alt="">
+          <h2 class="head">Aktywność <span>117</span></h2>
+        </div>
+        <div class="container-fluid">
+          <img class="tab-shadow lozad" data-src="/images/tab-shadow.png" alt="">
+            <div class="activity-arrows"></div>
+          <div class="callendar-slider-nav">
+            <div class="month"><div class="d-inline-block month-title">Lipiec</div></div>
+            <div class="month"><div class="d-inline-block month-title">Sierpień</div></div>
+            <div class="month"><div class="d-inline-block month-title">Wrzesień</div></div>
+            <div class="month"><div class="d-inline-block month-title">Październik</div></div>
+            <div class="month"><div class="d-inline-block month-title">Listopad</div></div>
+            <div class="month last-month"><div class="d-inline-block month-title">Grudzień</div></div>
+            <div class="month year-slide"><div class="d-inline-block month-title">Styczeń</div></div>
+            <div class="month"><div class="d-inline-block month-title">Luty</div></div>
+          </div>
+        </div>
+        <div class="container">
+            <div class="month-wrapper">
+              <div class="flex-row d-flex flex-wrap">
+                <div class="col-12 col-lg-4">
+                  <div class="calendar"></div>
+                </div>
+                <div class="col-12 col-lg-8 calendar-events-listing">
+                  <div class="callendar-slider-content">
+                    <div class="month">
+                      <div class="events-count">17 zdarzeń</div>
+                        <div class="month-axis">
+                          <div class="month-item d-flex justify-content-between">
+                            <div class="event-icon">
+                              <img class="lozad" data-src="/images/service.png" alt="">
+                            </div>
+                            <div class="event-content">
+                              <div class="d-flex flex-wrap justify-content-between title-container"><div class="event-title">Serwis</div><div class="event-date">25 paź 2020</div></div>
+                              <div class="event-desc">Wymiana zbiornika paliwa na wtryskowy do softaila fat boy, heritage, standart.</div>
+                            </div>
+                          </div>
+                          <div class="month-item d-flex justify-content-between">
+                            <div class="event-icon">
+                              <img class="lozad" data-src="/images/road.png" alt="">
+                            </div>
+                            <div class="event-content">
+                              <div class="d-flex flex-wrap justify-content-between title-container"><div class="event-title">Serwis</div><div class="event-date">19 paź 2020</div></div>
+                              <div class="event-desc">Wymiana zbiornika paliwa na wtryskowy do softaila fat boy, heritage, standart.</div>
+                            </div>
+                          </div>
+                          <div class="month-item d-flex justify-content-between">
+                            <div class="event-icon">
+                              <img class="lozad" data-src="/images/gas-pump.png" alt="">
+                            </div>
+                            <div class="event-content">
+                              <div class="d-flex flex-wrap justify-content-between title-container"><div class="event-title">Serwis</div><div class="event-date">16 paź 2020</div></div>
+                              <div class="event-desc">Wymiana zbiornika paliwa na wtryskowy do softaila fat boy, heritage, standart.</div>
+                            </div>
+                          </div>
+                          <div class="month-item d-flex justify-content-between">
+                            <div class="event-icon">
+                              <img class="lozad" data-src="/images/track.png" alt="">
+                            </div>
+                            <div class="event-content">
+                              <div class="d-flex flex-wrap justify-content-between title-container"><div class="event-title">Serwis</div><div class="event-date">14 paź 2020</div></div>
+                              <div class="event-desc">Wymiana zbiornika paliwa na wtryskowy do softaila fat boy, heritage, standart.</div>
+                            </div>
+                          </div>
+                        </div>
+                      <div class="button-container">
+                        <button class="btn no-bg">Załaduj więcej</button>
+                      </div>
+                    </div>
+                    <div class="month">
+                      <div class="events-count">17 zdarzeń</div>
+                        <div class="month-axis">
+                          <div class="month-item d-flex justify-content-between">
+                            <div class="event-icon">
+                              <img class="lozad" data-src="/images/service.png" alt="">
+                            </div>
+                            <div class="event-content">
+                              <div class="d-flex flex-wrap justify-content-between title-container"><div class="event-title">Serwis</div><div class="event-date">25 paź 2020</div></div>
+                              <div class="event-desc">Wymiana zbiornika paliwa na wtryskowy do softaila fat boy, heritage, standart.</div>
+                            </div>
+                          </div>
+                          <div class="month-item d-flex justify-content-between">
+                            <div class="event-icon">
+                              <img class="lozad" data-src="/images/road.png" alt="">
+                            </div>
+                            <div class="event-content">
+                              <div class="d-flex flex-wrap justify-content-between title-container"><div class="event-title">Serwis</div><div class="event-date">19 paź 2020</div></div>
+                              <div class="event-desc">Wymiana zbiornika paliwa na wtryskowy do softaila fat boy, heritage, standart.</div>
+                            </div>
+                          </div>
+                          <div class="month-item d-flex justify-content-between">
+                            <div class="event-icon">
+                              <img class="lozad" data-src="/images/gas-pump.png" alt="">
+                            </div>
+                            <div class="event-content">
+                              <div class="d-flex flex-wrap justify-content-between title-container"><div class="event-title">Serwis</div><div class="event-date">16 paź 2020</div></div>
+                              <div class="event-desc">Wymiana zbiornika paliwa na wtryskowy do softaila fat boy, heritage, standart.</div>
+                            </div>
+                          </div>
+                          <div class="month-item d-flex justify-content-between">
+                            <div class="event-icon">
+                              <img class="lozad" data-src="/images/track.png" alt="">
+                            </div>
+                            <div class="event-content">
+                              <div class="d-flex flex-wrap justify-content-between title-container"><div class="event-title">Serwis</div><div class="event-date">14 paź 2020</div></div>
+                              <div class="event-desc">Wymiana zbiornika paliwa na wtryskowy do softaila fat boy, heritage, standart.</div>
+                            </div>
+                          </div>
+                        </div>
+                      <div class="button-container">
+                        <button class="btn no-bg">Załaduj więcej</button>
+                      </div>
+                    </div>
+                    <div class="month">
+                      <div class="events-count">13 zdarzeń</div>
+                        <div class="month-axis">
+                          <div class="month-item d-flex justify-content-between">
+                            <div class="event-icon">
+                              <img class="lozad" data-src="/images/service.png" alt="">
+                            </div>
+                            <div class="event-content">
+                              <div class="d-flex flex-wrap justify-content-between title-container"><div class="event-title">Serwis</div><div class="event-date">25 paź 2020</div></div>
+                              <div class="event-desc">Wymiana zbiornika paliwa na wtryskowy do softaila fat boy, heritage, standart.</div>
+                            </div>
+                          </div>
+                          <div class="month-item d-flex justify-content-between">
+                            <div class="event-icon">
+                              <img class="lozad" data-src="/images/road.png" alt="">
+                            </div>
+                            <div class="event-content">
+                              <div class="d-flex flex-wrap justify-content-between title-container"><div class="event-title">Serwis</div><div class="event-date">19 paź 2020</div></div>
+                              <div class="event-desc">Wymiana zbiornika paliwa na wtryskowy do softaila fat boy, heritage, standart.</div>
+                            </div>
+                          </div>
+                          <div class="month-item d-flex justify-content-between">
+                            <div class="event-icon">
+                              <img class="lozad" data-src="/images/gas-pump.png" alt="">
+                            </div>
+                            <div class="event-content">
+                              <div class="d-flex flex-wrap justify-content-between title-container"><div class="event-title">Serwis</div><div class="event-date">16 paź 2020</div></div>
+                              <div class="event-desc">Wymiana zbiornika paliwa na wtryskowy do softaila fat boy, heritage, standart.</div>
+                            </div>
+                          </div>
+                          <div class="month-item d-flex justify-content-between">
+                            <div class="event-icon">
+                              <img class="lozad" data-src="/images/track.png" alt="">
+                            </div>
+                            <div class="event-content">
+                              <div class="d-flex flex-wrap justify-content-between title-container"><div class="event-title">Serwis</div><div class="event-date">14 paź 2020</div></div>
+                              <div class="event-desc">Wymiana zbiornika paliwa na wtryskowy do softaila fat boy, heritage, standart.</div>
+                            </div>
+                          </div>
+                        </div>
+                      <div class="button-container">
+                        <button class="btn no-bg">Załaduj więcej</button>
+                      </div>
+                    </div>
+                    <div class="month">Październik Content</div>
+                    <div class="month">Listopad Content</div>
+                    <div class="month">
+                      <div class="events-count">14 zdarzeń</div>
+                        <div class="month-axis">
+                          <div class="month-item d-flex justify-content-between">
+                            <div class="event-icon">
+                              <img class="lozad" data-src="/images/service.png" alt="">
+                            </div>
+                            <div class="event-content">
+                              <div class="d-flex flex-wrap justify-content-between title-container"><div class="event-title">Serwis</div><div class="event-date">25 paź 2020</div></div>
+                              <div class="event-desc">Wymiana zbiornika paliwa na wtryskowy do softaila fat boy, heritage, standart.</div>
+                            </div>
+                          </div>
+                          <div class="month-item d-flex justify-content-between">
+                            <div class="event-icon">
+                              <img class="lozad" data-src="/images/road.png" alt="">
+                            </div>
+                            <div class="event-content">
+                              <div class="d-flex flex-wrap justify-content-between title-container"><div class="event-title">Serwis</div><div class="event-date">19 paź 2020</div></div>
+                              <div class="event-desc">Wymiana zbiornika paliwa na wtryskowy do softaila fat boy, heritage, standart.</div>
+                            </div>
+                          </div>
+                          <div class="month-item d-flex justify-content-between">
+                            <div class="event-icon">
+                              <img class="lozad" data-src="/images/gas-pump.png" alt="">
+                            </div>
+                            <div class="event-content">
+                              <div class="d-flex flex-wrap justify-content-between title-container"><div class="event-title">Serwis</div><div class="event-date">16 paź 2020</div></div>
+                              <div class="event-desc">Wymiana zbiornika paliwa na wtryskowy do softaila fat boy, heritage, standart.</div>
+                            </div>
+                          </div>
+                          <div class="month-item d-flex justify-content-between">
+                            <div class="event-icon">
+                              <img class="lozad" data-src="/images/track.png" alt="">
+                            </div>
+                            <div class="event-content">
+                              <div class="d-flex flex-wrap justify-content-between title-container"><div class="event-title">Serwis</div><div class="event-date">14 paź 2020</div></div>
+                              <div class="event-desc">Wymiana zbiornika paliwa na wtryskowy do softaila fat boy, heritage, standart.</div>
+                            </div>
+                          </div>
+                        </div>
+                      <div class="button-container">
+                        <button class="btn no-bg">Załaduj więcej</button>
+                      </div>
+                    </div>
+                    <div class="month">Styczeń Content</div>
+                    <div class="month">
+                      <div class="events-count">15 zdarzeń</div>
+                        <div class="month-axis">
+                          <div class="month-item d-flex justify-content-between">
+                            <div class="event-icon">
+                              <img class="lozad" data-src="/images/service.png" alt="">
+                            </div>
+                            <div class="event-content">
+                              <div class="d-flex flex-wrap justify-content-between title-container"><div class="event-title">Serwis</div><div class="event-date">25 paź 2020</div></div>
+                              <div class="event-desc">Wymiana zbiornika paliwa na wtryskowy do softaila fat boy, heritage, standart.</div>
+                            </div>
+                          </div>
+                          <div class="month-item d-flex justify-content-between">
+                            <div class="event-icon">
+                              <img class="lozad" data-src="/images/road.png" alt="">
+                            </div>
+                            <div class="event-content">
+                              <div class="d-flex flex-wrap justify-content-between title-container"><div class="event-title">Serwis</div><div class="event-date">19 paź 2020</div></div>
+                              <div class="event-desc">Wymiana zbiornika paliwa na wtryskowy do softaila fat boy, heritage, standart.</div>
+                            </div>
+                          </div>
+                          <div class="month-item d-flex justify-content-between">
+                            <div class="event-icon">
+                              <img class="lozad" data-src="/images/gas-pump.png" alt="">
+                            </div>
+                            <div class="event-content">
+                              <div class="d-flex flex-wrap justify-content-between title-container"><div class="event-title">Serwis</div><div class="event-date">16 paź 2020</div></div>
+                              <div class="event-desc">Wymiana zbiornika paliwa na wtryskowy do softaila fat boy, heritage, standart.</div>
+                            </div>
+                          </div>
+                          <div class="month-item d-flex justify-content-between">
+                            <div class="event-icon">
+                              <img class="lozad" data-src="/images/track.png" alt="">
+                            </div>
+                            <div class="event-content">
+                              <div class="d-flex flex-wrap justify-content-between title-container"><div class="event-title">Serwis</div><div class="event-date">14 paź 2020</div></div>
+                              <div class="event-desc">Wymiana zbiornika paliwa na wtryskowy do softaila fat boy, heritage, standart.</div>
+                            </div>
+                          </div>
+                        </div>
+                      <div class="button-container">
+                        <button class="btn no-bg">Załaduj więcej</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <div class="container-fluid d-flex justify-content-center align-items-center flex-column">
+        <div class="footer-container">
+          <div class="caption-container d-flex flex-column align-items-center">
+            <img class="lozad d-block" data-src="/images/logo-white.png" alt="">
+            <div class="footer-caption d-block">Pochwal się swoim motocyklem</div>
+          </div>
+          <div class="cta-container d-flex flex-column align-items-center">
+            <a href="" class="btn cta border-o">Utwórz stronę za darmo</a>
+            <div class="cta-caption">Zero ukrytych kosztów. Zero ściemy.</div>
+          </div>
+        </div>
+      </div>
+      <div class="credits container-fluid d-flex justify-content-center allign-items-center">
+        <div class="d-block"><span>bikesearch.pl 2020 Wszelkie prawa zasrzeżone. Ikony dostarczył&nbsp;</span><a rel="nofollow" target="_blank" href="https://www.freepik.com//"> Freepik</a><span>. Dzięki portalowi&nbsp;</span><a rel="nofollow" target="_blank" href="https://www.flaticon.com/"> www.flaticon.com</a></div>
+      </div>
+    </footer>
+
+
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- Fontello (icons) -->
+    <link rel="stylesheet" href="/css/fontello/css/bikesearch.css">
+    <link rel="stylesheet" href="/css/hamburger/hamburger.min.css">
+    <!-- Styles -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- Lozad JS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Slick JS -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- Callendar Hello Week -->
+    <script type="text/javascript" src="/js/hello.week.min.js"></script>
+    <!-- Smoothscroll -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+    <!-- Optional JavaScript -->
+    <script>
+      const observer = lozad(); // lazy loads elements with default selector as '.lozad'
+      observer.observe();
+    </script>
+    <script>
+    	var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+    <script>
+      new SimpleBar(document.getElementById('simplebar'), { autoHide: false });
+    </script>
+    <script>
+      $(document).ready(function() {
+          $(window).scroll(function() { //Listen for the window's scroll event
+            if (isScrolledAfterElement(".navigation-section")) { //if it has scrolled beyond the #content elment
+              $('#fixed-nav').addClass('active'); //Show the navigation bar
+            } else {
+              $('#fixed-nav').removeClass('active'); //Else hide it
+            }
+          });
+          //Function that returns true if the window has scrolled beyond the given element
+          function isScrolledAfterElement(elem) {
+            var $elem = $(elem);
+            var $window = $(window);
+            var docViewTop = $window.scrollTop();
+            var docViewBottom = docViewTop - 120;
+            var elemTop = $elem.offset().top;
+            return elemTop <= docViewBottom;
+          }
+          });
+    </script>
+    <!-- Initialize Slick -->
+    <script>
+    $('#gallery-slider').slick({
+      lazyLoad: 'ondemand',
+      centerMode: true,
+      centerPadding: '0px',
+      slidesToShow:2,
+      variableWidth: true,
+      appendArrows: $('.gallery-arrows'),
+      prevArrow: '<div class="icon-arrow-left">',
+      nextArrow: '<div class="icon-arrow-right">',
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            variableWidth: false,
+            centerMode: false
+          }
+        }
+      ]
+    });
+   $('.callendar-slider-nav').slick({
+     slidesToShow: 7,
+     slidesToScroll: 1,
+     centerMode: true,
+     variableWidth: true,
+     centerPadding: '0px',
+     infinite:false,
+     asNavFor: '.callendar-slider-content',
+     dots: false,
+     waitForAnimate: false,
+     centerMode: true,
+     appendArrows: $('.activity-arrows'),
+     prevArrow: '<div class="icon-arrow-left">',
+     nextArrow: '<div class="icon-arrow-right">',
+     focusOnSelect: false,
+     swipe:false,
+     touchMove:false
+   });
+   $('.callendar-slider-content').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    infinite:false,
+    waitForAnimate: false,
+    arrows: false,
+    fade: true,
+    swipe:false,
+    touchMove:false,
+    adaptiveHeight: true,
+    asNavFor: '.callendar-slider-nav'
+  });
+    </script>
+    <script>
+      const myCalendar = new HelloWeek({
+        selector: '.calendar',
+        lang: 'pl',
+        langFolder: './js/langs/',
+        nav: false,
+        disablePastDays: false,
+        weekStart:1
+      });
+      var i=1;
+      $('section#activity').on('click','.icon-arrow-right',function() {
+        const slideCounter = parseInt($(".callendar-slider-nav").slick("getSlick").slideCount);
+        if (i >= slideCounter) {
+            return false;
+        }
+        else {
+          i++;
+          console.log(i);
+          myCalendar.next();
+        }
+      })
+      $('section#activity').on('click','.icon-arrow-left',function() {
+        if(i > 1){
+          i--;
+          console.log(i);
+          myCalendar.prev();
+        }
+        else{
+          return false;
+        }
+      })
+      $('.hamburger').on('click', function() {
+        $('.hamburger').toggleClass('is-active');
+      })
+    </script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  </body>
+</html>
